@@ -1,0 +1,101 @@
+.message-chatting {
+	flex: 1;
+	max-height: calc(80vh - 78px);
+
+	&__header {
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		border-bottom: solid 1px lightgray;
+	}
+
+	&__headerInfo {
+		flex: 1;
+		padding-left: 20px;
+
+		h3 {
+			margin-bottom: 3px;
+			font-weight: 500;
+		}
+
+		p {
+			color: grey;
+		}
+	}
+
+	&__body {
+		flex: 1;
+		background: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?cs=srgb&dl=pexels-fwstudio-129731.jpg&fm=jpg")
+			center no-repeat;
+		padding: 30px;
+		overflow-y: scroll;
+		height: 100%;
+	}
+
+	&__message,
+	&__receiver {
+		position: relative;
+		font-size: 16px;
+		padding: 10px;
+		width: fit-content;
+		border-radius: 10px;
+		background: #fff;
+		margin-bottom: 30px;
+	}
+
+	&__timestamp {
+		margin-left: 10px;
+		font-size: xx-small;
+	}
+
+	&__name {
+		position: absolute;
+		top: -15px;
+		font-weight: 800;
+		font-size: xx-small;
+	}
+
+	&__receiver {
+		margin-left: auto;
+		background: #dcf8c6;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 62px;
+		border-top: solid 1px lightgray;
+		margin: 10px 0;
+		padding: 10px;
+		outline-width: 0;
+
+		form {
+			flex: 1;
+			display: flex;
+
+			input {
+				flex: 1;
+				border-radius: 30px;
+				padding: 15px;
+				border: none;
+			}
+
+			button {
+				display: none;
+			}
+		}
+
+		.MuiSvgIcon-root {
+			color: gray;
+
+			&:first-child {
+				margin-right: 10px;
+			}
+
+			&:last-child {
+				margin-left: 10px;
+			}
+		}
+	}
+}
